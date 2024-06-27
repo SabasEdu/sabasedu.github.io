@@ -15,7 +15,7 @@
   list-style: none;
 }
 .cards .flex ul li:not(:last-of-type) {
-  margin-bottom: 0.6rem;
+  margin-bottom: 3.6rem;
 }
 .cards .flex ul li img {
   background-color: crimson;
