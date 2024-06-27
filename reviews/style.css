@@ -9,7 +9,7 @@
   justify-content: center;
   gap: 1rem;
   overflow: hidden;
-  max-height: 50rem;
+  max-height: 60rem;
 }
 .cards .flex ul {
   list-style: none;
