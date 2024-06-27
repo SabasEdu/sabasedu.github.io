@@ -20,7 +20,7 @@
 .cards .flex ul li img {
   background-color: crimson;
   width: 320px;
-  height: 200px;
+  height: auto;
   border: none;
   border-radius: 0.5rem;
 }
