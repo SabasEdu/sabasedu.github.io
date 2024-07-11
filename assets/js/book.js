@@ -1,3 +1,8 @@
+/**
+--Copyright by Sharoar Jahan Shaon--> **/
+/**
+
+
 //js power
 
 //indicator
