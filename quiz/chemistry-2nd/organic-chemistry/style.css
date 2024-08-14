@@ -23,7 +23,7 @@ body {
 }
 body:after {
   content: "";
-  background-image: url(./img/background.jpg);
+  background-image: url(../img/background.jpg);
   position: absolute;
   left: 0;
   top: 0;
