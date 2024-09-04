@@ -1,0 +1,144 @@
+/**
+--Copyright by Sharoar Jahan Shaon--> **/
+
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;300;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Anek Latin", sans-serif;
+}
+
+.section-box .list-box {
+  display: flex;
+}
+
+.section-box {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-box .box,
+.section-box .box::before,
+.section-box .box::after {
+  box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.7);
+}
+
+.section-box .box {
+  width: 90%;
+  max-width: 320px;
+  background-color: #543265;
+  padding: 25px 15px;
+  border-radius: 5px 25px 25px 25px;
+  position: relative;
+
+  margin: 0 15px;
+}
+.section-box .box::before,
+.section-box .box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  border-radius: 25px;
+  transition: transform 0.2s linear;
+}
+.section-box .box:hover::before,
+.section-box .box:hover::after {
+  transform: skewY(0);
+}
+.section-box .box::before {
+  transform: skewY(10deg);
+  background-color: #8147cf;
+  bottom: -20px;
+  z-index: -1;
+}
+.section-box .box::after {
+  transform: skewY(15deg);
+  background-color: #1aa5e5;
+  bottom: -35px;
+  z-index: -2;
+}
+
+.section-box .box.one {
+  border-top: 3px solid #da606f;
+}
+.section-box .box.two {
+  border-top: 3px solid #ff8c6c;
+}
+
+.section-box .top {
+  display: flex;
+  justify-content: space-between;
+}
+.section-box .box .mini-title {
+  color: #aaa;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.section-box .box .logo {
+  width: 45px;
+  border-radius: 50%;
+}
+
+.section-box .box .content {
+  margin-top: 30px;
+}
+.section-box .box .big-title {
+  color: #fff;
+  font-size: 32px;
+}
+.section-box .box .text {
+  color: #eee;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.section-box .box .details {
+  list-style: none;
+  margin-top: 25px;
+}
+.section-box .box .details .detail {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.section-box .box .details .detail-icon {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  background-color: #2a1035;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 10px;
+}
+.section-box .box .details .detail-name {
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #eee;
+}
+
+@media screen and (max-width: 600px) {
+  .section-box {
+    height: auto;
+    padding: 50px 0;
+  }
+  .section-box .list-box {
+    flex-direction: column;
+  }
+  .section-box .list-box .box:not(:first-child) {
+    margin-top: 80px;
+  }
+}
+/**
+--Copyright by Sharoar Jahan Shaon--> **/
